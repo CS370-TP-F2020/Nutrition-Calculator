@@ -1,4 +1,4 @@
-id,description,calories,protein_in_grams,carbs_in_grams,fat_in_grams
+id,description,calories,protein_grams_per_hundred,carbs_grams_per_hundred,fat_grams_per_hundred
 11000000,"Milk, human",70,1.03,6.89,4.38
 11100000,"Milk, NFS",51,3.34,4.87,1.99
 11111000,"Milk, whole",60,3.28,4.67,3.2
