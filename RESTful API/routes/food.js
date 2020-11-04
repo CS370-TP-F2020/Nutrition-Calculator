@@ -1,10 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const Food = require('../models/food')
+//const Food = require('../models/food')
 
 
 
 //GET ALL, sends json of all food info 
+/*
 router.get('/', async (req, res) => {
     try {
         const foods = await Food.find()
@@ -13,14 +14,16 @@ router.get('/', async (req, res) => {
         res.status(500).json({message: err.message})
     }
 })
-
+*/
 //GET ONE
+/*
 router.get('/:id', getFood, (req, res) => {
    res.send(res.food)
 })
-
-//CREATE ONE using json 
+*/
+//POST request, logs request body to STDOUT and returns request body as response 
 router.post('/', async (req, res) => {
+    /*
     const food = new Food({
         name: req.body.name
     })
@@ -31,10 +34,14 @@ router.post('/', async (req, res) => {
         //400 = user input error
         res.status(400).json({ message: err.message })
     }
+    */
+   res.json(req.body)
+   console.log(req.body)
 })
 
 //UPDATE ONE
 //DELETE ONE
+/*
 router.delete('/:id', getFood, async (req, res) => {
     try {
         await res.food.remove()
@@ -60,5 +67,5 @@ async function getFood(req, res, next) {
     res.food = food
     next()
 }
-
+*/
 module.exports = router
