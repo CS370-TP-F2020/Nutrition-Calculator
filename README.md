@@ -1,6 +1,6 @@
 # Nutrition-Calculator
 
-# Description- ROUGH DRAFT, FINISH BEFORE SUBMITTING
+# Description
 Our project is a recipe nutrition tracker. The user will input each ingredient of a recipe, along with a quantity for each ingredient. Once all ingredients have been entered, the user will be taken to a new page that will show a table listing the nutritional information for each ingredient, along with the combined recipe nutritional information. This API is used to service GET requests to a front end that the user interacts with. Each GET request will query a MongoDB database to return the nutritional facts for a specific food. However, because these GET requests query a MongoDB database, which requires a separate container, the code has been stripped down for this deliverable to simply service JSON POST requests. The server will print the request body to STDOUT using console.log, and return the body of the POST request as a response. The server will listen for POST requests on localhost:3000/food.
 
 # Usage
