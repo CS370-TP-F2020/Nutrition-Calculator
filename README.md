@@ -17,7 +17,7 @@ Our project is a recipe nutrition tracker. The user will input each ingredient o
 # Docker
 - To run with Docker:
 - Must have docker installed
-- cd into 'RESTful API'
+- cd into 'restful-API'
 - docker build -t node-rest-api .
 - docker run --name=api-container -p 3000:3000 -d node-rest-api
 - To stop:
